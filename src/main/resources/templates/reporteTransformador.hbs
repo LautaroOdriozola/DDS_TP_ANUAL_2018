@@ -1,0 +1,14 @@
+{{#> layoutAdmin.hbs}}
+{{#*inline "content"}}
+<div>
+    <link rel="stylesheet" href="/hogares.css"/>
+
+    <h1 class="mdl-typography--display-1">Reporte para transformador {{transformador}}</h1>
+    <p>
+        En el período de {{periodo}}
+        el transformador {{transformador}}
+        suministró {{consumo}}KW
+        a {{cantidadClientes}} cliente(s).</p>
+</div>
+{{/inline}}
+{{/layoutAdmin.hbs}}

@@ -1,0 +1,30 @@
+{{#> layoutAdmin.hbs}}
+{{#*inline "content"}}
+<link rel="stylesheet" href="/hogares.css"/>
+<div class="my-table-container">
+    <h3 class="mdl-typography--display-1">Hogares</h3>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th>Responsable</th>
+                <th>Domicilio</th>
+                <th>Posición</th>
+                <th>Categoría</th>
+                <th>Consumo</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each this}}
+            <tr>
+                <td>{{nombre}}</td>
+                <td>{{domicilio}}</td>
+                <td>{{posicion}}</td>
+                <td>{{categoria}}</td>
+                <td>{{consumo}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+{{/inline}}
+{{/layoutAdmin.hbs}}

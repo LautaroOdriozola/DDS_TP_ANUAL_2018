@@ -1,0 +1,65 @@
+[
+	{
+		"nombre": 1,
+		"montoFijo": 18.76,
+		"montoVariable": 0.644,
+		"kwMinimo": 0,
+		"kwMaximo": 150
+	},
+	{
+		"nombre": 2,
+		"montoFijo": 35.32,
+		"montoVariable": 0.644,
+		"kwMinimo": 150,
+		"kwMaximo": 325
+	},
+	{
+		"nombre": 3,
+		"montoFijo": 60.71,
+		"montoVariable": 0.681,
+		"kwMinimo": 325,
+		"kwMaximo": 400
+	},
+	{
+		"nombre": 4,
+		"montoFijo": 71.74,
+		"montoVariable": 0.738,
+		"kwMinimo": 400,
+		"kwMaximo": 450
+	},
+	{
+		"nombre": 5,
+		"montoFijo": 110.38,
+		"montoVariable": 0.794,
+		"kwMinimo": 450,
+		"kwMaximo": 500
+	},
+	{
+		"nombre": 6,
+		"montoFijo": 220.75,
+		"montoVariable": 0.832,
+		"kwMinimo": 500,
+		"kwMaximo": 600
+	},
+	{
+		"nombre": 7,
+		"montoFijo": 443.59,
+		"montoVariable": 0.851,
+		"kwMinimo": 600,
+		"kwMaximo": 700
+	},
+	{
+		"nombre": 8,
+		"montoFijo": 545.96,
+		"montoVariable": 0.851,
+		"kwMinimo": 700,
+		"kwMaximo": 1400
+	},
+	{
+		"nombre": 9,
+		"montoFijo": 887.19,
+		"montoVariable": 0.851,
+		"kwMinimo": 1400,
+		"kwMaximo": 10000
+	}
+]

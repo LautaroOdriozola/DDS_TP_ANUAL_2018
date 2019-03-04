@@ -1,0 +1,44 @@
+{{#> layoutAdmin.hbs}}
+{{#*inline "content"}}
+<link rel="stylesheet" href="/hogares.css"/>
+<div class="my-table-container">
+    <h3 class="mdl-typography--display-1">Transformadores</h3>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+        <tr>
+            <th>ID Transformador</th>
+            <th>Energía Suministrada (este periodo)</th>
+            <th>Posicion</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each transformadores}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{energia}}</td>
+            <td>{{posicion}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div style="margin-top: 10px">
+    <h1 class="mdl-typography--display-1">Consulta por período</h1>
+    <form action="/admin/reportes/transformadorPeriodo" method="post">
+        <label for="id">ID Transformador:</label>
+        <input type="number" id="id" name="id" min="1" max="{{maxTransformador}}">
+
+        <label for="periodo">Periodo:</label>
+        <input type="month" id="periodo" name="periodo" style="margin-bottom: 10px;">
+
+        <div class="button-container">
+            <button type="submit"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Ingresar
+            </button>
+        </div>
+    </form>
+</div>
+{{/inline}}
+{{/layoutAdmin.hbs}}

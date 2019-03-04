@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F5F5F5;
+}
+
+.mdl-card {
+    width: 20vw;
+    height: 50vh;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mdl-card__media {
+    background-color: white;
+    width: 90%;
+    align-self: center;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mdl-card__actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.warning {
+    background-color: #F44336;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warning * {
+    margin: 0;
+    color: white;
+}

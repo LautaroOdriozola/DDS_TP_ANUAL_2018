@@ -1,0 +1,58 @@
+{{#> layoutCliente.hbs}}
+{{#*inline "content"}}
+
+{{#if numberError}}
+    <div class="warning">
+        <h3>Error</h3>
+        <p>Hubo algún error relacionado a los números ingresados. Error:</p>
+        <p>{{errorMessage}}</p>
+    </div>
+{{else if nameError}}
+    <div class="warning">
+        <h3>Error</h3>
+        <p>Por favor, ingrese un nombre.</p>
+    </div>
+{{/if}}
+
+{{#if confirmed}}
+<div class="success">
+    <p>El dispositivo {{nombre}} fue cargado con éxito.</p>
+</div>
+{{/if}}
+
+<div class="my-container">
+    <link rel="stylesheet" href="/altaDispositivo.css"/>
+    <h1 class="mdl-typography--display-1">Dar de alta dispositivos</h1>
+    <form action="/cliente/altaDispositivo" method="post">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="nombre" name="nombre">
+          <label class="mdl-textfield__label" for="nombre">Nombre</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="horasMaximas" name="horasmaximas">
+          <label class="mdl-textfield__label" for="horasMaximas">
+              Horas Maximas
+          </label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="horasMinimas" name="horasminimas">
+          <label class="mdl-textfield__label" for="horasMinimas">
+              Horas Minimas
+          </label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="kwHora" name="kwhora">
+          <label class="mdl-textfield__label" for="kwHora">
+            KW/Hora
+          </label>
+        </div>
+        <div class="button-container">
+            <button type="submit"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Ingresar
+            </button>
+        </div>
+    </form>
+</div>
+{{/inline}}
+{{/layoutCliente.hbs}}

@@ -1,0 +1,69 @@
+[
+  {
+    "dispositivos": [
+      {
+        "nombre": "televisor",
+        "kwPorHora": 0.205,
+        "encendido": true,
+        "id": 1
+      },
+      {
+        "nombre": "calefactor",
+        "kwPorHora": 2.40,
+        "encendido": false,
+        "id": 4
+      }
+    ],
+    "dispositivosInteligentes": [],
+    "nombre": "Marcos",
+    "apellido": "Gutierrez",
+    "tipoId": "dni",
+    "id": "40955966",
+    "telefono": "49234565",
+    "domicilio": " av la plata 465",
+    "fechaAlta": "04/03/2017"
+  },
+  {
+    "dispositivos": [
+      {
+        "nombre": "aire acondicionado",
+        "kwPorHora": 0.99,
+        "encendido": false,
+        "id": 2
+      },
+      {
+        "nombre": "lavarropas",
+        "kwPorHora": 2.20,
+        "encendido": true,
+        "id": 5
+      }
+    ],
+    "dispositivosInteligentes": [],
+    "nombre": "Paula",
+    "apellido": "Fernandez",
+    "tipoId": "dni",
+    "id": "40344054",
+    "telefono": "49234434",
+    "domicilio": " av directorio 300",
+    "fechaAlta": "10/07/2014"
+  },
+  {
+    "dispositivos": [
+      {
+        "nombre": "batidora",
+        "kwPorHora": 0.20,
+        "encendido": true,
+        "id": 3
+      }
+    ],
+    "dispositivosInteligentes": [],
+    "nombre": "Rocio",
+    "apellido": "Falcon",
+    "tipoId": "dni",
+    "id": "40334453",
+    "telefono": "35331767",
+    "domicilio": " beauchef 234",
+    "fechaAlta": "11/03/2005"
+  }
+]
+

@@ -1,0 +1,44 @@
+.material-icons {
+    background-color: #F44336;
+    border-radius: 5px;
+    padding: 5%;
+    color: white;
+    margin-right: 10px;
+}
+
+.active-navbar-item {
+    background-color: #F44336;
+    color: white !important;
+}
+
+.active-navbar-item i {
+    background-color: white;
+    color: #F44336
+}
+
+.mdl-navigation__link {
+    padding: 10px !important;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.warning {
+    background-color: #F44336;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warning * {
+    margin: 0;
+    color: white;
+}

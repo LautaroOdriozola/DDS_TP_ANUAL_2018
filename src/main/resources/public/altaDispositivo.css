@@ -1,0 +1,38 @@
+.my-container {
+    background-color: #F44336;
+    width: 33%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.my-container h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+form * {
+    width: 80%;
+    align-self: center;
+}
+
+.button-container  {
+    align-self: flex-end !important;
+}
+
+.success {
+    background-color: #00E676;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.success p {
+    margin-bottom: 0;
+}

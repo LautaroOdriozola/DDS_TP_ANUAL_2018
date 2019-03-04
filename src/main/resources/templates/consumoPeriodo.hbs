@@ -1,0 +1,24 @@
+{{#>layoutCliente.hbs}}
+    {{#*inline "content"}}
+        <link rel="stylesheet" href="/hogares.css"/>
+        <div class="my-table-container">
+            <h3 class="mdl-typography--display-1">Hogares</h3>
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                <thead>
+                <tr>
+                    <th>Dispositivo</th>
+                    <th>Consumo</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each dispositivosConConsumos}}
+                    <tr>
+                        <td>{{@key}}</td>
+                        <td>{{this}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    {{/inline}}
+{{/layoutCliente.hbs}}

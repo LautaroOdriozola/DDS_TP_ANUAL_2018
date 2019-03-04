@@ -1,0 +1,52 @@
+{{#> layoutCliente.hbs}}
+{{#*inline "content"}}
+<link rel="stylesheet" href="/hogar.css"/>
+<h1 class="mdl-typography--display-1 titulo_consumo">Consumo</h1>
+<div class="periodos">
+    <div class="mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Consultas por período</h2>
+        </div>
+        <div class="mdl-card__actions">
+            <a href="/cliente/ingresarConsulta">Consultar</a>
+        </div>
+    </div>
+
+    {{#each periodos}}
+        <div class="mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{@key}}</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                {{this}} KW/h
+            </div>
+            <div class="mdl-card__actions">
+                <a href="/cliente/periodo?periodo={{@key}}">Ver detalles</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+<div class="my-table-container">
+    <h1 class="mdl-typography--display-1">Hogar</h1>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+       <thead>
+           <tr>
+               <th class="mdl-data-table__cell--non-numeric">Dispositivo</th>
+               <th>Estado</th>
+               <th>Consumo Estimado (mes)</th>
+           </tr>
+       </thead>
+       <tbody>
+            {{#each dispositivo}}
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric">{{nombre}}</td>
+                <td>{{#if estado}}Encendido{{else}}Apagado{{/if}} </td>
+                <td>{{consumoMensualPretty}}</td>
+            </tr>
+           {{/each}}
+       </tbody>
+   </table>
+</div>
+{{/inline}}
+{{/layoutCliente.hbs}}

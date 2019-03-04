@@ -1,0 +1,16 @@
+{{#> layoutCliente.hbs}}
+    {{#*inline "content"}}
+        <h1 class="mdl-typography--display-1">Consulta por período</h1>
+        <form action="/cliente/periodo" method="post">
+            <label for="periodo">Periodo:</label>
+            <input type="month" id="periodo" name="periodo" style="margin-bottom: 10px;">
+
+            <div class="button-container">
+                <button type="submit"
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                    Ingresar
+                </button>
+            </div>
+        </form>
+    {{/inline}}
+{{/layoutCliente.hbs}}

@@ -1,0 +1,13 @@
+.my-table-container {
+    background-color: #F44336;
+    width: 80%;
+}
+
+.my-table-container table {
+    width: 100%;
+}
+
+.my-table-container h3 {
+    color: white;
+    margin-left: 20px;
+}

@@ -1,0 +1,40 @@
+.titulo_consumo {
+    align-self: flex-start;
+    margin: 10px 0 0 50px;
+}
+
+.my-table-container {
+    margin-bottom: 20px;
+}
+
+.periodos {
+    width: 100%;
+    padding: 0 20px 20px;
+    overflow-x: scroll;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.mdl-card {
+    margin: 20px;
+    flex: 0 0 auto;
+    max-width: 200px;
+}
+
+.mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #F44336;
+    height: 20%;
+}
+
+.mdl-card__actions a {
+    color: white;
+    text-decoration: underline;
+}
+

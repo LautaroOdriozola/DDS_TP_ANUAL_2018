@@ -1,0 +1,23 @@
+[
+	{
+		"nombre": "Matias",
+		"apellido": "Perez",
+		"domicilio": "av corrientes 3500",
+		"fechaAlta": "04/04/2014",
+		"id": 1
+	},
+	{
+		"nombre": "Tomas",
+		"apellido": "Gutierrez",
+		"domicilio": "av santa fe 2300",
+		"fechaAlta": "12/03/2017",
+		"id": 2
+	},
+	{
+		"nombre": "Martina",
+		"apellido": "Rodriguez",
+		"domicilio": "Cachimayo 200",
+		"fechaAlta": "10/10/2017",
+		"id": 3
+	}
+]

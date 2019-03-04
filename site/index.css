@@ -1,0 +1,43 @@
+.material-icons {
+    background-color: #F44336;
+    border-radius: 5px;
+    padding: 5%;
+    color: white;
+    margin-right: 10px;
+}
+
+.active-navbar-item {
+    background-color: #F44336;
+    color: white !important;
+}
+
+.active-navbar-item i {
+    background-color: white;
+    color: #F44336
+}
+
+.mdl-navigation__link {
+    padding: 10px !important;
+}
+
+.page-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-table-container {
+    background-color: #F44336;
+    width: 80%;
+}
+
+.my-table-container table {
+    width: 100%;
+}
+
+.my-table-container h1 {
+    color: white;
+    margin-left: 20px;
+}

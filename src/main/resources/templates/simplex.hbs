@@ -1,0 +1,60 @@
+{{#> layoutCliente.hbs}}
+{{#*inline "content"}}
+    <link rel="stylesheet" href="/hogares.css"/>
+    <script type="text/javascript"> function showDiv(toggle){
+document.getElementById(toggle).style.display = 'block';
+}
+</script>
+    
+    
+    
+    
+    {{#if noHuboSolucion}}
+        <div class="warning">
+            <h3>Error</h3>
+            <p>No pudimos realizar una optimización de consumo con sus dispositivos. Lo lamentamos.</p>
+        </div>
+    {{else}}
+    <div class="my-table-container">
+        <h3 class="mdl-typography--display-1">Optimizacion de consumo</h3>
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Dispositivo</th>
+                    <th>Mejor distribucion de horas</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each dispositivo}}
+                   <tr>
+                       <td>{{ nombre }}</td>
+                       <td>{{ consumoMensual }}</td>
+                   </tr>
+               {{/each}}
+            </tbody>
+        </table>
+    </div>
+{{/if}}
+    <div class="mdl-typography--title">
+        <h2 class="mdl-typography--display-1"> Ahorro automatico </h2>
+
+        <h5>Activar el ahorro automatico hara que el mismo accione por si solo,
+            al excederse del consumo optimo, mejorando la eficiencia del hogar.</h5>
+
+        <div class="button-container">
+              <button type="submit"  
+              					onclick="showDiv('toggle');"
+                                class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"  >
+                            Activar ahorro automatico
+                        </button>
+               <div id=toggle  style="display:none">Ahorro Activado</div>      
+                    
+                    </div>
+                   
+   
+    </div>
+    
+    
+
+{{/inline}}
+{{/layoutCliente.hbs}}
